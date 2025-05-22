@@ -1,0 +1,182 @@
+# AI-SAST Demo Repository - Python Dependencies
+# Core web framework
+Flask==2.3.3
+Flask-SQLAlchemy==3.0.5
+Flask-JWT-Extended==4.5.3
+Flask-CORS==4.0.0
+Flask-Migrate==4.0.5
+
+# Database drivers
+SQLAlchemy==2.0.23
+psycopg2-binary==2.9.7
+pymongo==4.5.0
+
+# Security and authentication
+bcrypt==4.0.1
+cryptography==41.0.7
+PyJWT==2.8.0
+passlib==1.7.4
+
+# HTTP requests and APIs
+requests==2.31.0
+urllib3==2.0.7
+httpx==0.25.0
+
+# Data processing and validation
+marshmallow==3.20.1
+cerberus==1.3.4
+pydantic==2.4.2
+jsonschema==4.19.2
+
+# File handling and utilities
+Pillow==10.0.1
+python-magic==0.4.27
+openpyxl==3.1.2
+PyPDF2==3.0.1
+
+# Serialization (includes vulnerable versions for demo)
+PyYAML==6.0.1  # Can be vulnerable with yaml.load()
+pickle5==0.0.12  # Inherently unsafe for untrusted data
+
+# Templating
+Jinja2==3.1.2
+MarkupSafe==2.1.3
+
+# Email and notifications
+smtplib2==0.2.1
+email-validator==2.1.0
+celery==5.3.4
+redis==5.0.1
+
+# Development and testing
+pytest==7.4.3
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+black==23.9.1
+flake8==6.1.0
+mypy==1.6.1
+
+# Logging and monitoring
+structlog==23.2.0
+sentry-sdk==1.38.0
+
+# Configuration
+python-dotenv==1.0.0
+configparser==6.0.0
+
+# Date and time
+python-dateutil==2.8.2
+pytz==2023.3
+
+# XML processing (potentially vulnerable)
+lxml==4.9.3  # Can be vulnerable to XXE
+xmltodict==0.13.0
+
+# Legacy dependencies (some with known vulnerabilities for demo)
+Werkzeug==2.3.7
+itsdangerous==2.1.2
+
+# Command line utilities
+click==8.1.7
+colorama==0.4.6
+
+# Network utilities
+dnspython==2.4.2
+netaddr==0.9.0
+
+# Data analysis (for some features)
+pandas==2.1.3
+numpy==1.25.2
+
+# Caching
+python-memcached==1.59
+
+# Queue management
+kombu==5.3.3
+
+# Process management
+supervisor==4.2.5
+
+# Performance monitoring
+psutil==5.9.6
+
+# Development server
+gunicorn==21.2.0
+waitress==2.1.2
+
+# API documentation
+flask-restx==1.2.0
+apispec==6.3.0
+
+# Background tasks
+APScheduler==3.10.4
+
+# File uploads
+flask-uploads==0.2.1
+
+# Rate limiting
+Flask-Limiter==3.5.0
+
+# Session management
+Flask-Session==0.5.0
+
+# Form handling
+WTForms==3.1.0
+Flask-WTF==1.2.1
+
+# Internationalization
+Flask-Babel==4.0.0
+
+# Admin interface
+Flask-Admin==1.6.1
+
+# Socket.IO for real-time features
+python-socketio==5.9.0
+eventlet==0.33.3
+
+# Machine learning (for some advanced features)
+scikit-learn==1.3.2
+joblib==1.3.2
+
+# Image processing
+opencv-python==4.8.1.78
+
+# Cryptographic operations
+pycryptodome==3.19.0
+hashlib2==1.0.1
+
+# ZIP file handling
+zipfile38==0.0.3
+
+# Web scraping utilities (can be misused)
+beautifulsoup4==4.12.2
+scrapy==2.11.0
+
+# SSH and SFTP
+paramiko==3.3.1
+pysftp==0.2.9
+
+# LDAP authentication
+python-ldap==3.4.3
+
+# OAuth integration
+authlib==1.2.1
+oauthlib==3.2.2
+
+# Backup utilities
+boto3==1.29.7  # AWS S3 integration
+azure-storage-blob==12.19.0  # Azure blob storage
+
+# Development utilities
+ipython==8.17.2
+jupyter==1.0.0
+
+# Testing utilities
+factory-boy==3.3.0
+faker==19.12.0
+
+# Vulnerable packages for demonstration (old versions)
+# Note: These are intentionally old/vulnerable versions
+pycrypto==2.6.1  # Superseded by pycryptodome, has vulnerabilities
+django==3.2.0    # Old version with known issues (not used but imported somewhere)
+jinja2==2.10.1   # Older version for some legacy code paths
